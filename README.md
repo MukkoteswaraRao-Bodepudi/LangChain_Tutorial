@@ -54,3 +54,31 @@ A hands-on repository for learning LangChain concepts from fundamentals to RAG a
 - Tool Binding
 - Tool Calling
 - Tool Execution
+
+
+
+# 🤖 Projects
+
+The repository also contains hands-on projects that apply the concepts learned throughout the tutorials.
+
+## Project 1 — Tool-Calling Agent
+
+A dynamic **tool-calling agent** built with LangChain.
+
+The agent allows an LLM to:
+
+- Understand the user's request
+- Decide whether a tool is required
+- Select the appropriate tool
+- Generate tool arguments
+- Execute the selected tool dynamically
+- Receive the tool result
+- Send the result back to the LLM
+- Generate a final response
+- Handle multiple tool calls
+
+### Project File
+
+```text
+Projects/
+└── 01_Tool_Calling_Agent.ipynb
