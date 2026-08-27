@@ -172,7 +172,7 @@ The system can also handle queries that require information from multiple source
 # 🔄 RAG Pipeline
 
 The current RAG pipeline is:
-
+``` text
 Documents
     ↓
 Document Loading
@@ -202,7 +202,7 @@ Context
 LLM
     ↓
 Final Answer
-
+```
 
 # 📂 Document Ingestion
 
@@ -245,7 +245,7 @@ The project also explored the impact of chunking on retrieval quality.
 Document chunks are converted into vector representations using an embedding model.
 
 The basic process is:
-
+``` text 
 Document Chunk
       ↓
 Embedding Model
@@ -253,6 +253,8 @@ Embedding Model
 Vector Representation
       ↓
 Vector Store
+
+```
 
 When a user asks a question, the query is also converted into a vector.
 
@@ -264,7 +266,7 @@ The system then compares the query vector with stored document vectors to identi
 The first retrieval approach implemented in the project was vector similarity retrieval.
 
 The process is:
-
+``` text
 User Query
     ↓
 Query Embedding
@@ -272,7 +274,7 @@ Query Embedding
 Vector Similarity Search
     ↓
 Relevant Document Chunks
-
+```
 Vector similarity retrieval is useful when the wording of the query and the document is different but the underlying meaning is similar.
 
 Example:
@@ -353,6 +355,8 @@ Reranker Output: Top 3
 
 Pipeline:
 
+``` text
+
 Query
   ↓
 Hybrid Retrieval
@@ -366,6 +370,8 @@ Relevance Scoring
 Top 3 Candidates
   ↓
 LLM
+
+```
 
 
 # 🤖 Cross-Encoder Reranking
@@ -571,34 +577,6 @@ Example:
 - Synthetic Healthcare Data
 
 
-# 📁 Project Structure
-
-hospital-rag/
-│
-├── data/
-│   ├── hospital_documents/
-│   └── patient_records/
-│
-├── notebooks/
-│   ├── document_ingestion.ipynb
-│   ├── vector_retrieval.ipynb
-│   ├── hybrid_rag.ipynb
-│   ├── reranking.ipynb
-│   └── evaluation.ipynb
-│
-├── src/
-│   ├── ingestion/
-│   ├── retrieval/
-│   ├── reranking/
-│   ├── tools/
-│   └── utils/
-│
-├── README.md
-└── requirements.txt
-
-Note: The exact project structure may vary depending on the current implementation.
-
-
 # 🔬 Key Concepts Learned
 
 ## Document Processing
@@ -651,6 +629,8 @@ The core RAG experimentation phase is complete.
 
 The project has covered:
 
+``` text 
+
 Document Loading
       ↓
 Chunking
@@ -675,36 +655,9 @@ Mixed Queries
       ↓
 Testing
 
+```
+
 The current focus is to move forward rather than continue optimizing the RAG pipeline in depth.
-
-
-# 🚀 Next Phase — LangGraph
-
-The next stage of the project will focus on LangGraph and agentic workflows.
-
-The existing RAG components can later be integrated into a LangGraph-based system.
-
-Planned concepts include:
-
-LangGraph
-    ↓
-State
-    ↓
-Nodes
-    ↓
-Edges
-    ↓
-Conditional Routing
-    ↓
-Tool Calling
-    ↓
-Agentic Workflows
-    ↓
-Human-in-the-Loop
-    ↓
-Production-Oriented Agent Architecture
-
-Further RAG optimization and advanced evaluation can be explored later after learning LangGraph.
 
 
 # ⚠️ Disclaimer
