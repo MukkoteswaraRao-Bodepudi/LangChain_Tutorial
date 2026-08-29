@@ -1,0 +1,4 @@
+LLM Fundamentals
+A large language model is a neural network trained on large amounts of text to predict and generate token sequences. Chat applications commonly use system, human, and AI messages.
+
+Important concepts include tokens, context windows, temperature, inference, and structured output. LLMs can produce incorrect or unsupported information, so retrieval, tool use, validation, and evaluation are useful reliability techniques.

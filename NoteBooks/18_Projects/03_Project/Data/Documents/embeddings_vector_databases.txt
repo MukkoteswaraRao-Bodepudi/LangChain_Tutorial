@@ -1,0 +1,7 @@
+Embeddings and Vector Databases
+An embedding represents text as a numerical vector. Semantically similar texts can have nearby vectors according to a similarity metric.
+
+Vector databases store embeddings and support similarity search. The workflow is to split documents, embed chunks, store vectors with metadata, embed a query, and retrieve similar chunks.
+
+Metadata can include document, section, source, or page. Metadata filtering can restrict retrieval. Keyword matching can outperform semantic search for exact names, identifiers, and rare terms, making hybrid retrieval useful.
+

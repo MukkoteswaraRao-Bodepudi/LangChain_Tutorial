@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation
+RAG combines information retrieval with language generation. A typical pipeline is document loading, chunking, embedding generation, vector-store indexing, similarity retrieval, optional reranking, prompt construction, and LLM generation.
+
+Chunk size affects retrieval quality: very large chunks can contain unrelated material, while very small chunks can lose context. The retrieval parameter k controls how many candidates are returned.
+
+Hybrid retrieval combines semantic vector search with keyword search. Reranking can reorder candidates using a stronger relevance model. RAG does not automatically guarantee factual answers, so retrieval and answer quality should be evaluated.
+

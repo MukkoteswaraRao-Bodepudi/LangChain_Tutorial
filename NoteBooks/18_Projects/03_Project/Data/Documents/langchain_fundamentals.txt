@@ -1,0 +1,8 @@
+LangChain Fundamentals
+LangChain is a framework for building applications powered by language models. Core abstractions include chat models, prompt templates, output parsers, documents, retrievers, tools, and agents.
+
+Chat models generate responses from messages. Prompt templates create reusable prompts with runtime variables. Output parsers transform model output into application-friendly formats. Runnables are composable units that can be connected into pipelines. Retrievers fetch relevant documents. Tools expose callable external capabilities. Agents use models and tools to decide actions.
+
+LangChain Expression Language (LCEL) supports composition such as prompt -> model -> parser. Separating configuration, retrieval, prompting, model invocation, and response formatting makes applications easier to test and maintain.
+
+

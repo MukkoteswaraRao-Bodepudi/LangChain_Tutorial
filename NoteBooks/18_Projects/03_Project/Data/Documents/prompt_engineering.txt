@@ -1,0 +1,7 @@
+Prompt Engineering
+Prompt engineering designs instructions that guide a language model toward desired behavior. A robust prompt specifies the task, context, expected output, constraints, and behavior when information is missing.
+
+Prompt templates separate fixed instructions from runtime variables. In RAG, prompts should distinguish retrieved context from the user's question and instruct the model not to invent information absent from the context.
+
+Few-shot examples demonstrate desired behavior. Structured output schemas constrain responses. Prompts should be evaluated with representative datasets rather than a few manually selected examples.
+

@@ -1,0 +1,6 @@
+AI Agents and Tools
+A tool is a callable capability that lets an application perform an operation outside the model, such as search, database lookup, calculation, an API request, or a domain-specific function.
+
+Tool calling lets a model request a tool with structured arguments. The application executes the tool and returns its result. An agent adds a decision-making loop in which the model can choose actions based on the request.
+
+A chain is a predefined sequence, a tool is an external callable capability, and an agent decides which actions or tools to use. Agents require precise tool descriptions, validated arguments, bounded execution, error handling, and observability.
